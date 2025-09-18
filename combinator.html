@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Blog Page</title>
+  <style>
+    /* 1. Descendant Combinator (space) */
+    article p {
+      color: #b41616;
+      line-height: 1.6;
+    }
+
+    /* 2. Child Combinator (>) */
+    section > h2 {
+      color: darkblue;
+      font-size: 24px;
+    }
+
+    /* 3. Adjacent Sibling (+) */
+    h2 + p {
+      font-style: italic;
+      color: gray;
+    }
+
+    /* 4. General Sibling (~) */
+    h3 ~ p {
+      background-color: #b6b887;
+      padding: 10px;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      background-color: rgb(172, 192, 210);
+    }
+
+    .sidebar > ul > li {
+      list-style: square;
+      color: purple;
+    }
+
+  </style>
+</head>
+<body>
+
+  <article>
+    <h1>My First Blog</h1>
+    
+    <section>
+      <h2>Introduction</h2>
+      <p>This is an intro to the blog.</p> <!-- Italic due to h2 + p -->
+
+      <p>This paragraph comes next.</p> <!-- Descendant of article -->
+    </section>
+
+    <section>
+      <h2>Content</h2>
+      <p>Main content paragraph.</p>
+    </section>
+
+    <h3>Related Info</h3>
+    <p>Paragraph 1</p> <!-- gets background from h3 ~ p -->
+    <p>Paragraph 2</p> <!-- also gets background -->
+
+    <div class="sidebar">
+      <ul>
+        <li>Archives</li>
+        <li>Categories</li>
+      </ul>
+    </div>
+  </article>
+
+</body>
+</html>

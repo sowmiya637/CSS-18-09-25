@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Selectors</title>
+  <style>
+    /* Universal Selector - applies to every element */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Grouping Selector - apply same color & font-size to multiple selectors */
+    h1, h2, p, .highlight {
+      color: #2c3e50;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    /* ID Selector - unique styles for element with id="main-header" */
+    #main-header {
+      background-color: #3498db;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      font-size: 28px;
+    }
+
+    /* Class Selector - styles for all elements with class="highlight" */
+    .highlight {
+      background-color: #f9e79f;
+      padding: 10px;
+      border-radius: 4px;
+    }
+
+    body {
+      background-color: #d6ecf1;
+      padding: 40px;
+    }
+
+    .content {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+    }
+
+    /* Class selector to style buttons */
+    .button {
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      background-color: #1c5980;
+    }
+
+</style>
+</head>
+<body>
+
+  <div class="content">
+    <!-- ID selector -->
+    <h1 id="main-header">Welcome to Selector Demo!</h1>
+
+    <!-- Grouping selector in action: h2 and p share same styles -->
+    <h2>What you will see here:</h2>
+    <p>This page demonstrates <strong>class</strong>, <strong>id</strong>, <strong>universal</strong>, and <strong>grouping</strong> selectors.</p>
+
+    <!-- Class selector -->
+    <p class="highlight">This paragraph uses the <code>.highlight</code> class selector to get a yellow background.</p>
+
+    <h2>Try clicking the button:</h2>
+    <button class="button">Click me</button>
+
+  </div>
+
+</body>
+</html>
