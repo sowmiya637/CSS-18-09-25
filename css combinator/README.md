@@ -17,13 +17,13 @@ This demo includes the following **CSS combinators**:
 
 ---
 
-## 🖼 Visual Behavior in the Page
+##  Visual Behavior in the Page
 
-- 🔴 **Red text**: All `<p>` inside `<article>` via `article p`  
-- 🔵 **Dark blue headings**: `<h2>` directly under `<section>` via `section > h2`  
+-  **Red text**: All `<p>` inside `<article>` via `article p`  
+-  **Dark blue headings**: `<h2>` directly under `<section>` via `section > h2`  
 - *Gray italic text*: `<p>` immediately after `<h2>` via `h2 + p`  
-- 🟨 **Yellow background**: `<p>` after `<h3>` via `h3 ~ p`  
-- 🟣 **Purple list items**: `<li>` inside `.sidebar > ul > li`
+-  **Yellow background**: `<p>` after `<h3>` via `h3 ~ p`  
+-  **Purple list items**: `<li>` inside `.sidebar > ul > li`
 
 
 
